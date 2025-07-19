@@ -154,5 +154,26 @@
   border: 2px solid #ccc; /* optional: just for visibility */
 }
 
+.reallife {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center images horizontally */
+  align-items: center;     /* Center vertically if needed */
+  gap: 20px;               /* Optional: space between images */
+  margin: 0 auto;          /* Center container if it has a fixed width */
+  padding: 20px;
+  max-width: 800px;        /* Optional: limit the size */
+}
 
+.reallife img {
+  height: 300px;
+  width: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.real1, .real2 {
+  flex: 0 0 auto; /* Prevent stretching, keep exact size */
+  text-align: center;
+}
 
