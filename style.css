@@ -123,8 +123,6 @@
   }
 }
 
-
-
 .contact-flex{
    
     display:flex;
@@ -134,3 +132,27 @@
     margin:auto;
     color: grey;
 }
+
+.qrcode-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* space between columns */
+  margin-top: 40px;
+}
+
+.qrcode-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* space between images */
+}
+
+.qrcode-column img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc; /* optional: just for visibility */
+}
+
+
+
