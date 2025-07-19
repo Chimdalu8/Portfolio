@@ -1,0 +1,136 @@
+.body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center;
+  padding: 20px;
+  background-color: wheat;
+  text-align: center;
+}
+
+.h1 {
+  margin: 10px 0;
+  font-size: 36px;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px; /* space between links */
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+  text-align: center;
+}
+
+.profilepic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  margin: 20px auto;
+}
+
+.gift {
+  justify-content: center;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.h3 {
+  color: gray;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+.info-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about-flex,
+.work-flex {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-flex h2,
+.work-flex h2 {
+  margin-top: 0;
+}
+
+.work img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.work img{
+     width:50px;
+    height:50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    animation: floatUpDown 3s ease-in-out infinite;
+}
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+.contact-flex{
+   
+    display:flex;
+    flex-direction:row;
+    background-color:wheat; 
+    padding: 20px;
+    margin:auto;
+    color: grey;
+}
